@@ -1,0 +1,2587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<style>
+		.clearfix:before,
+		.clearfix:after {
+					    content: "";
+					    display: block;
+					    clear: both;
+					    visibility: hidden;
+					    line-height: 0;
+					    height: 0;
+					    font-size:0;
+}
+
+		.clearfix { *zoom:1;}
+
+		*{
+			margin:0;
+			padding: 0;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		li{
+			list-style: none;
+		}
+
+		body{
+			width: 100%;
+		}
+
+		.Top-bg{
+			width: 100%;
+			background-color: #000;
+		}
+
+		.container{
+			width:1140px; 
+			margin:0 auto;
+			padding-top: 14px;
+			padding-bottom: 14px;
+		
+		}
+
+		.share {
+			float: left;
+		}
+
+		.share li{
+			float: left;
+		}
+
+		.share i{
+			color: #fff;
+			font-size: 14px;
+			margin-right: 5px;
+		}
+
+		.share i:hover{
+			color: #3BA974;
+		}
+
+		.phone{
+			color: #fff;
+			float: left;
+			font-size: 12px;
+			margin-left: 140px;
+			margin-right: 140px;
+		}
+
+		.phone i{
+			color: #3BA974;
+			font-size: 18px;
+			margin-right: 4px;
+		}
+
+		.time{
+			color: #fff;
+			float: left;
+			font-size: 12px;
+			margin-right: 140px;
+		}
+
+		.time i{
+			color: #3BA974;
+			font-size: 18px;
+			margin-right: 4px;
+		}
+
+		.languages li{
+			margin-right: 10px;
+			float: left;
+		}
+
+		.languages a{
+			color: #fff;
+		}
+
+		.languages a:hover{
+			color: #3BA974;
+		}
+
+		.languages{		
+			font-size: 12px;
+			float: left;
+			margin-right: 140px;
+		}
+
+		.u-basket{
+			width: 44px;
+			float: left;
+			position: relative;
+		}
+
+		.u-basket i{
+			color: #fff;
+			font-size: 18px;
+		}
+
+		.search{
+			float: left;
+
+		}
+
+		.search i{
+			color: #fff;
+			font-size: 22px;
+		}
+
+		.search i:hover{
+			color: #3BA974;
+		}
+
+		.nav{
+			width: 1140px;
+			margin:0 auto;
+			margin-top: 30px;
+			padding-bottom: 90px;
+		}
+
+		.nav .logo{
+			background-image: url("images/logo-1.png");
+			display: block;
+			width: 131px;
+			height: 41px;
+			float: left;
+		}
+
+		.nav-bar{
+			
+			margin-left: 263px;
+			padding-top: 5px;
+		}
+
+		.nav-bar img{
+			width: 12px;
+			margin-left: 6px;
+		}
+
+		.nav-bar li{
+			float: left;
+			position: relative;
+		}
+
+		.nav-bar a{
+			color: #000;
+			display: block;
+			font-size: 12px;
+			font-weight: bold;
+			float: left;
+			margin-left:58px;
+		}
+
+		section{
+			width: 1140px;
+			margin:0 auto;
+		}
+
+		.g-px{
+			width: 365px;
+			float: right;
+			padding-left: 80px;
+			padding-top: 3rem;
+		}
+
+		.g-px span{
+			color: #000;
+			font-weight: 500;
+			font-size: 2.14286rem;
+			margin-right: .5rem;
+		}
+
+		.g-px s{
+			color: #777;
+			font-weight: 500;
+			font-size: 1.14286rem;
+		}
+
+		.g-mb-30{
+			width: 365px;
+			float: right;
+			margin-bottom: 35px;
+		}
+
+		.g-mb-30 h1{
+			font-weight: 300;
+			font-size: 2.5rem;
+			margin-bottom: 2.5rem;
+			line-height: 1.1;
+		}
+
+		.g-mb-30 p{
+			color: #777;
+			line-height: 1.6rem;
+			font-size: 14px;
+		}
+
+		h2{
+			font-size: 0.85714rem;
+			color: #999;
+			font-weight: 400;
+			margin-bottom: 12px;
+		}
+
+		.g-brd-y{
+			border-top: solid 1px #ddd;
+			/*border-bottom: solid 1px #ddd;*/
+			width: 365px;
+			float: left;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.g-brd-y a{
+			display: block;
+		}
+
+		.g-brd-y h5{
+			color: #999;
+			font-weight: normal;
+			float: left;			
+		}		
+
+		.g-brd-y span{
+			font-size: 16px;
+		}
+
+		.g-brd-y span img{
+			width: 14px;
+			height: 14px;
+			float: right;
+		}
+
+		.collapse{
+			display: none;
+		}
+
+		.collapse p{
+			color: #777;
+			font-size: 0.85714rem;
+			margin-bottom: .5rem;
+		}
+
+		.g-brd-y ul{
+			float: right;
+		}
+
+		.g-brd-y ul li{
+			width: 12px;
+			height: 12px;
+			border-radius: 100%;
+			cursor: pointer;
+			float: left;
+			margin-left: 10px;
+		}
+
+		.g-brd-y ul li:first-child{	
+			background-color: #3bb18f;	
+		}
+
+		.g-brd-y ul li:nth-child(2){	
+			background-color: #e5e1de;	
+		}
+
+		.g-brd-y ul li:nth-child(3){	
+			background-color: #000;	
+		}
+
+		.g-brd-y ul li:nth-child(4){	
+			background-color: #777;	
+		}
+
+		.size{
+			width: 365px;
+		    float: left;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		    border-top: solid 1px #ddd;
+		}
+
+		.size h5{
+			float: left;
+			color: #999;
+    		font-weight: normal;
+		}
+
+		.size ul{
+			float: right;
+		}
+
+		.size ul li{
+			float: left;
+			font-size: 14px;
+			margin-left: 16px;
+			cursor: pointer;
+		}
+
+		.color{
+			color: #3bb18f;
+		}
+
+		.quanti{
+			float: right;
+			border:1px solid #ccc;
+		}
+
+		.quanti input{
+			border:0;
+			width: 42px;
+			text-align: center;
+		}
+
+		.quanti span{
+			width: 14px;
+			display: block;
+			margin:0 auto;
+			cursor: pointer;
+		}
+
+		.quanti .in-add{
+			float: right;
+			width: 38px;
+			border-left: 1px solid #ccc;
+		}
+
+		
+
+		.row{
+			float: left;
+			border-top: 1px solid #ccc;
+    		padding-top: 29px;
+		}
+
+		.row>div{
+			padding: 15px 24px;
+		    border-radius: 0.25rem;
+		}
+
+		.row .cart{
+			color: #fff;
+   			background-color: #3bb18f;
+   			float: left;
+   			cursor: pointer;
+		}
+
+		.row .cart:hover{
+			background-color: #58c7a7;
+		}
+
+		.row .Wishlist{
+			float: right;
+			color: #999;
+			border: 1px solid #777;
+			margin-left: 7px;
+			cursor: pointer;
+		}
+
+		.row .Wishlist:hover{
+			background-color: #000;
+		}
+
+		.row .Wishlist img{
+			width: 12px;
+			height: 12px;
+			margin-left: 15px;
+		}
+
+		.row .cart i{
+			font-size: 12px;
+			margin-left: 15px;
+		}
+
+		.tablist{
+			font-size: 0.85714rem;
+			float: left;
+    		margin-top: 29px;
+		}
+
+		.tablist li{
+			float: left;
+			border-bottom: 1px solid;
+			padding-bottom: 4px;
+		}
+
+		.tablist li:nth-child(2){
+			margin:0 62px;
+		}
+
+		.tablist li a{
+			color: #000;
+		}
+
+		.return p{
+			color: #777;
+			font-size: 0.92857rem;
+		}
+
+		.return p a{
+			color: #3bb18f;
+		}
+
+		.tablist .show1{
+			color: #3bb18f;
+		}
+
+		.return{
+			padding-top: 1.4rem;
+			float: left;
+			display: none;
+		}
+
+		.nav-1{
+			display: none;
+			float: left;
+    		padding-top: 2.14286rem;
+		}
+
+		.nav-1 td{
+			width: 50px;
+		}
+
+		.nav-1 td:first-child{
+			width: 150px;
+		}
+
+		.nav-1 tr{
+			color: #777;
+    		font-size: 0.85714rem;
+   			line-height: 1.8;
+		}
+
+		.active{
+			display: block !important;
+
+		}
+
+		h4{
+			margin-bottom: 1rem;
+		}
+
+		thead{
+			color: #555;
+			font-size: 0.92857rem;
+		}
+
+		.nav-3{
+			float: left;
+			margin-top: 8px;
+			display: none;
+		}
+
+		.nav-3>div{
+			float: left;
+			margin-top: 14px;
+		}
+
+		h6{
+			float: left;
+			width: 100px;
+			color: #555;
+		}
+
+		h6:last-child{
+			width: 65px;
+			text-align: center;
+		}
+
+		.nav-3 li{
+			color: #777;
+			font-size: 13px;
+			float: left;
+		}
+
+		.nav-3 li:first-child{
+			width: 100px;
+		}
+
+		.nav-3 li:nth-child(2){
+			width: 100px;
+		}
+
+		.nav-3 li:nth-child(3){
+			width: 123px;
+		}
+
+		.nav-3 .li-1{
+			padding: 0.2px;
+		}
+
+		.free-bg{
+			width: 100%;
+			padding-top: 2.14286rem;
+			padding-bottom: 2.14286rem;
+			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
+			float: left;
+		}
+
+		.free{
+			width: 1140px;
+			margin:0 auto;
+			padding: 18px 0;
+			float: left;
+		}
+
+		
+
+		.free>div{
+			float: left;
+			padding-left: 6.57143rem;
+			padding-right: 6.57143rem;
+		}
+
+		.free>div:nth-child(2){
+			border-left: 1px solid #eee;
+			border-right: 1px solid #eee;
+		}
+
+		.free>div img{
+			width: 30px;
+			height: 30px;
+			margin-right: 1.5rem;
+		}
+
+		.free>div span{
+			font-size: 0.8rem;
+			display: block;
+			line-height: 1.6;
+
+		}
+
+		.shipping{
+			float: right;
+		}
+
+		
+
+		.main>div .word{
+			width: 35%;
+			padding: 15% 5%;
+			float: left;
+		}
+
+		.main>div .pic{
+			float: right;
+		
+		    overflow: hidden;
+		}
+
+		.main>div:nth-child(2) .pic{
+			float: left;
+		}
+
+		.main>div span{
+			margin-bottom: 3rem;
+			font-size: 0.5rem;
+			display: block;
+		}
+
+		.main>div h3{
+			font-size: 1.6rem;
+			margin-bottom: 1.5rem;
+		}
+
+		.main>div p{
+			color: #777;
+		}
+
+		.main .mid img{
+			float: left;
+		}
+
+		.main .mid .word{
+			float: right;
+		}
+
+		.Latest{
+			background-color: #f7f7f7;
+		}
+
+		.Latest-1{
+			padding-bottom: 5rem;
+			padding-top: 7.14286rem;
+			width: 1140px;
+			padding-right: 15px;
+    		padding-left: 15px;
+    		margin:0 auto;
+		}
+
+		.Latest-1 .text{
+			margin-bottom: 3.57143rem;
+			max-width: 600px;
+			text-align: center;
+			margin:0 auto;
+			margin-bottom: 3.57143rem;
+		}
+
+		.Latest-1 .text h2{
+			font-size: 2rem;
+			color: #000;
+			margin-bottom: 1.5rem;
+		}
+
+		.Latest-1 .text p{
+			font-size: 1.25rem;
+			color: #777;
+			font-weight: 300;
+		}
+
+		.gwc{
+			position: absolute;
+			z-index: 99;
+			background-color: #000;
+			border-top: 2px solid #3bb18f;
+			padding: 0px 12px 16px 12px;
+			top: 5%;
+   			right: 21%;
+   			display: none;
+   			height: 396px;
+		}
+
+		.gwc .sp{
+			margin-top: 12px;
+    		margin-bottom: 0;
+    		padding: 0;
+    		border: 0;
+		}
+
+		.gwc>div{
+			height: 315px;
+			overflow: auto;
+		}
+
+		.gwc>div>div{
+			margin: 12px 0;
+			padding-bottom: 12px;
+			border-bottom: 1px solid #352929;
+		}
+
+		.gwc img{
+			width: 80px;
+			float: left;
+			cursor: pointer;
+		}
+
+		.gwc .w{
+			float: left;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+
+		.gwc .w span{
+			color: #fff;
+			font-size: 14px;
+    		display: block;
+		}
+
+		.gwc .w span:last-child{
+			color: #ccc;
+			font-size: 12px;
+    		margin-top: 6px;
+		}
+
+		.gwc .view{
+			margin-top: 0;
+		}
+
+		.SUBTOTAL span{
+			color: #fff;
+		}
+
+		.SUBTOTAL span:last-child{
+			color: #3bb18f;
+			float: right;
+		}
+
+		.SUBTOTAL a{
+			color: #3bb18f;
+			padding: 6px 24px;
+			border: 1px solid #3bb18f;
+			margin-top: 12px;
+		    display: block;
+		    float: left;
+		}
+
+		.SUBTOTAL a:last-child{
+			background-color: #3bb18f;
+			color: #fff;
+			margin-left: 12px;
+		}
+
+		.grid{
+			padding: 12px;
+			width: 162px;
+    		float: left;
+    		border-top: 2px solid #3bb18f;
+    		position: absolute;
+		    z-index: 99;
+	
+		    background-color: #fff;
+		    display: none;
+
+		}
+
+		.grid li{
+			line-height: 2rem;
+		 	width: 100%;
+		}
+
+		.grid li:hover{
+			background-color: #ccc;
+			opacity: 0.5;
+		}
+
+		.grid a{
+			color: #000;
+    		font-weight: 400;
+    		margin-left: 0px;
+		}
+
+		.pic img{
+			width: 950px;
+		}
+
+		.pic-1 img{
+			width: 224px;
+			height: 332px;
+		}
+
+		
+
+		.pic-2{
+			width: 1140px;
+			margin:0 auto;
+			float: left;
+		    position: absolute;
+		    z-index: 99;
+		    left: -396%;
+		    background-color: #fff;
+		    border-top: 2px solid #3bb18f;
+			display: none;
+			border-left: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+		}
+
+		.pic-3{
+			width: 1140px;
+			margin:0 auto;
+			float: left;
+		    position: absolute;
+		    z-index: 99;
+		    left: -418%;
+		    background-color: #fff;
+		    border-top: 2px solid #3bb18f;
+			border-left: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+			display: none;
+		}
+
+
+		.pi-1{
+			position: relative;
+		}
+
+		.pi-1 span{
+			display: block;
+			position: absolute;
+		    bottom: 116px;
+		    left: 82px;
+		}
+
+		.pi-1 h2{
+			font-size: 2.5rem;
+			color: #000;
+			font-weight: 600;
+			position: absolute;
+		    bottom: 48px;
+		    left: 82px;
+		}
+
+		.pic-3>div{
+			float: left;
+			    padding: 24px 0px 24px 24px;
+		}
+
+		.pic-3 img{
+			width: 340px;
+			height: 436.6px;
+			float: left;
+			cursor: pointer;
+		}
+
+		.pic-2>div{
+			float: left;
+			padding: 25px;
+		}
+
+		.pic-2>div span{
+			float: left;
+			width: 100%;
+			line-height: 2;
+		}
+
+		.picbox{
+			width: 263px;
+		    height: 364px;
+		    overflow: hidden;
+		    float: left;
+		}
+
+		.picbox img{
+			width: 263px;
+			position: absolute;
+			opacity: 0;
+		}
+
+		.picbox .show{
+			opacity: 1;
+		}
+
+		.pic-d{
+			position: absolute;
+			margin-top: 300px;
+    		margin-left: 114px;
+		}
+
+		.pic-d a{
+			display: inline-block;
+			background-color: #fff;
+			width: 12px;
+			height: 12px;
+			border-radius: 100%;
+		}
+
+
+		.picbox .show{
+			opacity: 1;
+		}
+
+		.pic-d .active{
+			background-color: hotpink;
+		}
+
+		.pic-44{
+			float: left;
+		}
+		
+		.pic-44 li{
+			display: block;
+		    float: left;
+		    width: 356px;
+		    height: 453px;
+		    overflow: hidden;
+		    margin-left: 0.71429rem;
+		    margin-right: 0.71429rem;
+		    position: relative;
+		}
+
+		.pic-44 li:hover img{
+			transform: scale(1,1);
+		}
+
+		.pic-44 img{
+			width: 458px;
+			transition: all .5s;
+			transform: scale(1.2);
+		}
+
+		.sport{
+			margin-top: 350px;
+    		text-align: center;
+    		color: #777;
+    		font-size: 16px;
+    		position: absolute;
+    		left: 54px;
+    		bottom: -30px;
+    		transition: all 0.3s;
+		}
+
+		.sport>a{
+			margin-bottom: 10px;
+			border-bottom: 1px solid #fff;
+		}
+
+		.sport p a{
+    		font-size: 12px;
+    		color: rgba(255, 255, 255, 0.7);
+    		margin: 10px 0 20px 0;
+    		display: block;
+		}
+
+		.sport a{
+			color: #fff;
+		}
+
+		.sport span{
+			color: rgba(255, 255, 255, 0.7);
+			float: left;
+		}
+
+		.sport span:first-child{
+			float: none;
+		}
+
+		.sport h2{
+			color: #fff;
+			font-size: 20px;
+			    margin-top: 12px;
+		}
+
+		.do{
+			width: 50%;
+    		margin: auto;
+		}
+
+		.do h3{
+			text-align: center;
+			margin-bottom: 2.14286rem;
+			margin-top:13.14286rem;
+			font-size: 2rem;
+		}
+
+		.se{
+			width: 331px;
+    		margin: 0 auto;
+    		border:1px solid #ccc;
+    		border-radius: 0.45rem;
+		}
+
+		.se input{						
+			padding:1.2rem;
+			border:none;
+		}
+
+		.se span{			
+			border-left:none;
+			padding:1.2rem;
+		}
+
+		.se button{
+			background: #58c7a7;
+		    border-radius: 6px;
+		    padding: 9px 12px;
+		}
+
+		.share-1{
+			padding-top: 100px;
+		}
+
+		.share-1 ul{
+			width: 190px;
+			margin:0 auto;
+
+		}
+
+		.share-1 li{
+			float: left;
+    		padding: 0 10px;
+		}
+
+		.share-1 i{
+			width: 16px;
+			height: 16px;
+			color: #000;
+			float: left;
+		}
+
+		.share-1 a{
+			float: left;
+		}
+
+		.share-1 img{
+			width: 16px;
+			height: 16px;
+		}
+
+		.footer-top{
+			width: 1140px;
+			margin:0 auto;
+			padding-bottom: 80px;
+		}
+
+		.footer-top>div{
+			float: left;
+			padding: 0 30px;
+		}
+
+		.footer-top>div>div{
+			float: left;
+		}
+
+		.footer-top>div>div li{
+			line-height: 28px;
+		}
+
+		.footer-top>div>div li a:hover{
+			color: #58c7a7;
+		}
+
+		.footer-top>div>div img{
+			width: 13px;
+			height: 12px;
+			padding-top: 7px;
+		}
+
+		.footer-top>div>div:last-child{
+			width: 210px;
+		}
+
+		.footer-top>div>div li{
+			font-size: 0.8rem;
+    		color: #777;
+		}
+
+		.footer-top>div:last-child{
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		.footer-top>div:last-child li{
+			margin-left: 24px;
+		}
+
+		.footer-top>div:last-child img{
+			float: left;
+		}
+
+		.footer-top h2{
+			margin-bottom: 1.5rem;
+			font-size: 1.5rem;
+			color: #000;
+		}
+
+		.footer-top a{
+			font-size: 0.8rem;
+			color: #777;
+		}
+
+		.f-d-bg{
+			width: 100%;
+			border-top: 1px solid #ccc;
+		}
+
+		.footer-down{
+			width: 1140px;
+			margin:0 auto;
+			padding-bottom: 5.14286rem;
+			padding-top: 3.57143rem;
+		}
+
+		.footer-down p{
+			font-size: 0.92857rem;
+			color: #777;
+		}
+
+		
+
+		.footer-down>ul:last-child{
+			float: right;
+		}
+
+		.footer-down p{
+			float: left;
+		}
+
+		.footer-down li{
+			float: left;
+			margin-right: 10px;
+			position: relative;
+		}
+
+		.footer-down li>img{
+			position: absolute;
+		    top: -29px;
+		    left: -5px;
+		    display: none;
+		}
+
+		.footer-down li:nth-child(2)>img{
+			left: -11px;
+		}
+
+		.footer-down li:nth-child(3)>img{
+			left: -27px;
+		}
+
+		.footer-down li:nth-child(4)>img{
+			left: -9px;
+		}
+
+		.footer-down li:nth-child(5)>img{
+			left: -17px;
+		}
+
+		.footer-down li:last-child>img{
+			left: -3px;
+		}
+
+		.Latest-1 .swiper-container{
+			width: 263px;
+			height: 365px;
+			margin-left: 0.6rem;
+    		margin-right: 0.6rem;
+    		float: left;
+		}
+
+		.Latest-1 .swiper-container img{
+			width: 263px;
+			height: 365px;
+		}
+
+		.border{
+			border:1px solid black;
+		}
+
+		.swiper-button-prev img,.swiper-button-next img{
+			width: 20px !important;
+			height: 20px !important;
+		}
+
+		.g-bg-white{
+			background-color: #fff;
+			margin-left: 0.6rem;
+			width: 263px;
+			margin-right: 0.6rem;
+			float: left;
+		}
+
+		.g-bg-white img{
+			width: 16px;
+		}
+
+		.g-bg-white h4{
+			font-size: 0.78571rem;
+			text-align: center;
+    		line-height: 4.6;
+		}
+
+		.g-bg-white .sz a{
+			float: left;
+			color: #292b2c;
+			font-size: 0.71429rem;
+			    margin: 0 6px;
+		}
+
+		.g-bg-white .sz{
+			text-align: center;
+    		margin: -26px 30px 0 30px;
+    		padding-bottom: 18px;
+		}
+
+		.g-bg-white .sz .chima{
+			float: left;
+		    background: #f7f7f7;
+		    padding: 4px 20px;
+		    border-radius: 12px;
+		    margin: 0 20px;
+		}
+
+		.sz .chima i{
+			color: #999 !important;
+		}
+
+
+		
+
+		.jacket{
+			position: absolute;
+			top:300px;
+			left: 75px;
+		}
+
+		.auto::-webkit-scrollbar {/*隐藏滚轮*/
+			display: none;
+		}	
+
+		.jacket a{
+			display: block;
+			color: #fff;
+			font-size: 14px;
+			opacity: 0.8;
+			margin-top: -8px;
+			margin-bottom: 10px;
+		}
+
+		.jacket span{
+			margin-left: 24px;
+    		color: #fff;
+    		font-size: 18px;
+    		font-weight: bold;
+		}
+
+		.nav-3>div:first-child{
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 13px;
+		}
+
+		.color1{
+			width: 356px;
+		    height: 453px;
+		    background: rgba(0,0,0,0.4);
+		    z-index: 99;
+		    position: absolute;
+		}
+
+	.sper{
+		float: left;
+	}
+
+		.swiper-container {
+        width: 205px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+     /*   background-size: cover;*/
+        background-position: center;
+    }
+    .gallery-top {
+        height: 732px;
+        width: 635px;
+    }
+    .gallery-thumbs {
+        height: 140px;
+        width: 635px;
+        box-sizing: border-box;
+        padding: 10px 0;
+        float: left;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 205px;
+        height: 140px;
+        opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
+
+  	.searchform{
+  		background-color: #000;
+		position: absolute;
+	    right: 350px;
+	    top: 52px;
+	    padding: 0.71429rem;
+	    display: none;
+	    z-index: 99;
+  	}
+
+	.form-control{
+		padding:8px;
+		float: left;
+	}
+
+
+	.input-addon{
+		float: left;
+
+	}
+
+	.btn{
+		background-color: #3bb18f;
+		border: 0;
+		padding: 10px;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	.pic-4{
+		width: 1140px;
+		margin:0 auto;
+		float: left;
+		position: absolute;
+		z-index: 99;
+		left: -652%;
+		border-top: 2px solid #3bb18f;
+		display: none;
+	}
+
+	.pic-5{
+		width: 1140px;
+		margin:0 auto;
+		float: left;
+		position: absolute;
+		z-index: 99;
+		left: -640%;
+		border-top: 2px solid #3bb18f;
+		padding: 0 20px 45px 45px;
+		background-color: #fff;
+		border-left: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		display: none;
+	}
+
+	.pic-6{
+		width: 1140px;
+		margin:0 auto;
+		float: left;
+		position: absolute;
+		z-index: 99;
+		left: -960%;
+		border-top: 2px solid #3bb18f;
+		padding: 27px;
+		background-color: #fff;
+		border-left: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		display: none;
+	}
+
+	.nav-bar .pic-6>div{
+		width: 338px;
+		    padding: 10px;
+		    border:1px solid #ccc;
+		    float: left;
+		        margin: 10px;
+	}
+
+	.nav-bar .pic-6>div>img{
+		width: 100px;
+		height: 100px;
+		margin:0;
+		float: left;
+		margin-right: 10px;
+	}
+
+	.nav-bar .pic-6>div>a{
+		display: block;
+		font-size: 17.5px;
+	    line-height: 24.5px;
+	    font-weight: 600;
+	        margin-top: 10px;
+	    float: none;
+	}
+
+
+	.nav-bar .pic-6>div>a:nth-child(3){
+		font-size: 13px;
+		line-height: 20px;
+		color: #777;
+	}
+
+	.nav-bar .pic-6>div>span{
+		line-height: 35px;
+	}
+
+	.nav-bar .pic-6 .tb{
+		float: right;
+		margin-top: 9px;
+	}
+
+	.nav-bar .pic-6 .tb a{
+		margin-left: 0;
+	}
+
+	.nav-bar .pic-6 .tb a img{
+		width: 16px;
+		height: 16px;
+	}
+
+	.nav-bar .pic-6 .tb a:first-child{
+		border-right: 1px solid #ccc;
+		    padding-right: 5px;
+	}
+
+	.pic-5>div{
+		float: left;
+		margin-right: 164px;
+	}
+
+	.pic-5 ul{
+		width: 120px;
+
+	}
+
+	.pic-5 ul li{
+		float: left;
+		width: 100%;
+		margin-top: 6px;
+	}
+
+	.pic-5 ul li a{
+		margin:0;
+		color: #777;
+	}
+
+	.pic-5 h4{
+		margin-top: 45px;
+		margin-bottom: 0px;
+	}
+
+	.pic-5 a:hover{
+		text-decoration: underline;
+	}
+
+	.pic-4>div{
+		float: left;
+		position: relative;
+	}
+
+	.pic-4>div:first-child{
+		width: 760px;
+		height: 500px;
+	}
+
+	.pic-4>div img{
+		width: 100%;
+	}
+
+	.pic-4>div:last-child{
+		background-color: #eef1f8;
+		width: 380px;
+		height: 408px;
+		padding-top: 99px;
+	}
+
+	.p-9{
+		cursor: pointer;
+	}
+
+	.p-9 span{
+		display: block;
+		color: #fff;
+		font-size: 3rem;
+    	font-weight: 700;	
+
+	}
+
+	.p-9 .sp{
+		position: absolute;
+    	top: 34%;
+    	right: 5%;
+	}
+
+	.p-9 .sp span:first-child{
+		margin-left: 26%;
+	}
+
+	.p-9 .sp span:last-child{
+		font-size: 18px;
+		color: #000;
+		float: right;
+	}
+
+	.p-8{
+		cursor: pointer;
+	}
+
+	.p-8 span{
+		display: block;
+	}
+
+	.p-8 span:last-child{
+		color: #3bb18f;
+		font-size: 18px;
+		font-weight: 800;
+		margin-left: 57px;
+    	margin-top: 20px;
+	}
+
+	.p-8 .sp{
+		margin-left: 30%;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="Top-bg clearfix">
+		<div class="container clearfix">
+			<div class="share">
+				<ul class="clearfix">
+					<li><a href="#"><i class="iconfont icon-facebookf"></i></a></li>
+					<li><a href="#"><i class="iconfont icon-bird"></i></a></li>
+					<li><a href="#"><i class="iconfont icon-t"></i></a></li>
+					<li><a href="#"><i class="iconfont icon-tubiao213"></i></a></li>
+					<li><a href="#"><i class="iconfont icon-g"></i></a></li>
+				</ul>
+			</div>
+			<div class="phone"><i class="iconfont icon-dh"></i> 8 800 1234 4321</div>
+			<div class="time"><i class="iconfont icon-33"></i> Mon-Fri: 9 AM - 5 PM</div>
+			<ul class="languages">
+				<li><a href="#">English |</a></li>
+				<li><a href="#">FAQ |</a></li>
+				<li><a href="#">LOGIN</a></li>
+			</ul>
+			<div class="u-basket"><a href="#"><i class="iconfont icon-gouwuche-copy"></i></a></div>
+			<div class="gwc">
+				<div class="auto">
+					<div class="t clearfix">
+						<img src="images/眼镜.jpg" alt="">
+						<div class="w">
+							<span>Black Glasses</span>
+							<span>1 x $400.00</span>
+						</div>
+					</div>
+					<div class="m clearfix">
+						<img src="images/手套.jpg" alt="">
+						<div class="w">
+							<span>Black Glasses</span>
+							<span>1 x $400.00</span>
+						</div>
+					</div>
+					<div class="d clearfix">
+						<img src="images/鞋子.jpg" alt="">
+						<div class="w">
+							<span>Black Glasses</span>
+							<span>1 x $400.00</span>
+						</div>
+					</div>
+					<div class="e clearfix">
+						<img src="images/img4.jpg" alt="">
+						<div class="w">
+							<span>Black Glasses</span>
+							<span>1 x $400.00</span>
+						</div>
+					</div>
+				</div>
+				<div class="SUBTOTAL">
+					<div class="sp">
+						<span>SUBTOTAL</span>
+						<span>$1200.00</span>
+					</div>
+					<div class="view">
+						<a href="#">View Cart</a>
+						<a href="#">Checkout</a>
+					</div>
+				</div>
+			</div>
+			<div class="search"><a href="#"><i class="iconfont icon-fangdajing"></i></a></div>
+			<form action="" class="searchform">
+				<div class="input-group clearfix">
+					<input type="text" class="form-control" placeholder="Enter Your Search Here...">
+					<div class="input-addon">
+						<button class="btn">Go</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="nav">
+		<a href="#" class="logo"></a>
+		<ul class="nav-bar">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">Pages</a><img src="images/箭头 下.png" alt="">
+				<ul class="grid">
+					<li><a href="#">GRID FILTER</a></li>
+					<li><a href="#">LIST FILTER</a></li>
+					<li><a href="#">PRODUCT</a></li>
+					<li><a href="#">CHECKOUT</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#">SIGNUP</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Clothes</a><img src="images/箭头 下.png" alt="">
+				<div class="pic-2">
+					<div class="pic-1">
+						<img src="images/img1(1).jpg" alt="">
+						<p>
+							<span>Summer shorts</span>
+							<span>Man</span>
+							<span>$52.00</span>
+						</p>						
+					</div>
+					<div class="pic-1">
+						<img src="images/img2(1).jpg" alt="">
+						<p>
+							<span>Stylish shirt</span>
+							<span>Woman</span>
+							<span>$99.00</span>
+						</p>						
+					</div>
+					<div class="pic-1">
+						<img src="images/img3(1).jpg" alt="">
+						<p>
+							<span>Classic jacket</span>
+							<span>Man</span>
+							<span>$49.99</span>
+						</p>						
+					</div>
+					<div class="pic-1">
+						<img src="images/img4(1).jpg" alt="">
+						<p>
+							<span>Wool lined parka</span>
+							<span>Woman</span>
+							<span>$82.37</span>
+						</p>	
+					</div>
+				</div>
+			</li>
+			<li><a href="#">Collections</a><img src="images/箭头 下.png" alt="">
+				<div class="pic-3 clearfix">
+					<div class="pi-1">
+						<img src="images/dnh.jpg" alt="">
+						<span>Collections</span>
+						<h2>Women</h2>
+					</div>
+					<div class="pi-1">
+						<img src="images/nh.jpg" alt="">
+						<span>Collections</span>
+						<h2>Children</h2>
+					</div>
+					<div class="pi-1">
+						<img src="images/nr.jpg" alt="">
+						<span>Collections</span>
+						<h2>Men</h2>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">Promo</a><img src="images/箭头 下.png" alt="">
+				<div class="pic-4">
+					<div class="p-9">
+						<img src="images/mt.jpg" alt="">
+						<div class="sp">
+							<span>SUMMER</span>
+							<span>COLLECTION</span>
+							<span>Shop Now</span>
+						</div>
+					</div>
+					<div class="p-8">
+						<img src="images/xie.png" alt="">
+						<div class="sp">
+							<span>Sneaker Shoes for Man</span>
+							<span>$45.00</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">Catalogue</a><img src="images/箭头 下.png" alt="">
+				<div class="pic-5 clearfix">
+					<div class="one">
+						<h4>CLOTHES</h4>
+						<ul class="clearfix">
+							<li><a href="#">New in</a></li>
+							<li><a href="#">Coats & Jackets</a></li>
+							<li><a href="#">Jeans</a></li>
+							<li><a href="#">Dresses</a></li>
+							<li><a href="#">Shorts</a></li>
+							<li><a href="#">Skirts</a></li>
+							<li><a href="#">T-Shirts</a></li>
+						</ul>
+						<h4>SHOES</h4>
+						<ul class="clearfix">
+							<li><a href="#">Boots</a></li>
+							<li><a href="#">FLats</a></li>
+							<li><a href="#">Heels</a></li>
+							<li><a href="#">Sandals</a></li>
+							<li><a href="#">Sports</a></li>
+						</ul>
+					</div>
+					<div class="two">
+						<h4>ACCESSORIES</h4>
+						<ul class="clearfix">
+							<li><a href="#">All accessories</a></li>
+							<li><a href="#">Bags & Purses</a></li>
+							<li><a href="#">Scarvs & Hats</a></li>
+							<li><a href="#">Jewellery</a></li>
+							<li><a href="#">Fragrance & Beauty</a></li>
+						</ul>
+						<h4>LINGERIE</h4>
+						<ul class="clearfix">
+							<li><a href="#">Linger</a></li>
+							<li><a href="#">Slippers</a></li>
+						</ul>
+						<h4>NIGHTWEAR</h4>
+						<ul class="clearfix">
+							<li><a href="#">Nightwear</a></li>
+							<li><a href="#">Socks</a></li>
+							<li><a href="#">Tights</a></li>
+						</ul>
+					</div>
+					<div class="three">
+						<h4>MIXED</h4>
+						<ul class="clearfix">
+							<li><a href="#">New in</a></li>
+							<li><a href="#">Coats & Jackets</a></li>
+							<li><a href="#">Jeans</a></li>
+							<li><a href="#">Dresses</a></li>
+							<li><a href="#">Shorts</a></li>
+							<li><a href="#">Skirts</a></li>
+							<li><a href="#">T-shirts</a></li>
+							<li><a href="#">Boots</a></li>
+							<li><a href="#">Flats</a></li>
+							<li><a href="#">Heels</a></li>
+							<li><a href="#">Sandals</a></li>
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Socks</a></li>
+							<li><a href="#">Tights</a></li>
+						</ul>
+					</div>
+					<div class="four">
+						<h4>ACCESSORIES</h4>
+						<ul class="clearfix">
+							<li><a href="#">All accessories</a></li>
+							<li><a href="#">Bags & Purses</a></li>
+							<li><a href="#">Scarvs & Hats</a></li>
+							<li><a href="#">Jewellery</a></li>
+							<li><a href="#">Fragrance & Beauty</a></li>
+						</ul>
+						<h4>LINGERIE</h4>
+						<ul class="clearfix">
+							<li><a href="#">Linger</a></li>
+							<li><a href="#">Slippers</a></li>
+						</ul>
+						<h4>NIGHTWEAR</h4>
+						<ul class="clearfix">
+							<li><a href="#">Nightwear</a></li>
+							<li><a href="#">Socks</a></li>
+							<li><a href="#">Tights</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">Sales</a><img src="images/箭头 下.png" alt="">
+				<div class="pic-6 clearfix">
+					<div class="didi clearfix">
+						<img src="images/眼镜img1.jpg" alt="">
+						<a href="#">Glasses</a>
+						<a href="#">Accessories</a>
+						<span>$22.00</span>
+						<div class="tb clearfix">
+							<a href="#"><img src="images/购物车.png" alt=""></a>
+							<a href="#"><img src="images/聚收藏.png" alt=""></a>
+						</div>
+					</div>
+					<div class="didi clearfix">
+						<img src="images/img2手套.jpg" alt="">
+						<a href="#">Gloves</a>
+						<a href="#">Accessories</a>
+						<span>$55.00</span>
+						<div class="tb clearfix">
+							<a href="#"><img src="images/购物车.png" alt=""></a>
+							<a href="#"><img src="images/聚收藏.png" alt=""></a>
+						</div>
+					</div>
+					<div class="didi clearfix">
+						<img src="images/img3鞋.jpg" alt="">
+						<a href="#">Chukka Shoes</a>
+						<a href="#">Footwear</a>
+						<span>$55.00</span>
+						<div class="tb clearfix">
+							<a href="#"><img src="images/购物车.png" alt=""></a>
+							<a href="#"><img src="images/聚收藏.png" alt=""></a>
+						</div>
+					</div>
+					<div class="didi clearfix">
+						<img src="images/img4shoes.jpg" alt="">
+						<a href="#">Shoes</a>
+						<a href="#">Footwear</a>
+						<span>$55.00</span>
+						<div class="tb clearfix">
+							<a href="#"><img src="images/购物车.png" alt=""></a>
+							<a href="#"><img src="images/聚收藏.png" alt=""></a>
+						</div>
+					</div>
+					<div class="didi clearfix">
+						<img src="images/img5sneaker.jpg" alt="">
+						<a href="#">Sneaker</a>
+						<a href="#">Footwear</a>
+						<span>$55.00</span>
+						<div class="tb clearfix">
+							<a href="#"><img src="images/购物车.png" alt=""></a>
+							<a href="#"><img src="images/聚收藏.png" alt=""></a>
+						</div>
+					</div>
+					<div class="didi clearfix">
+						<img src="images/img6sn.jpg" alt="">
+						<a href="#">Sneaker</a>
+						<a href="#">Footwear</a>
+						<span>$55.00</span>
+						<div class="tb clearfix">
+							<a href="#"><img src="images/购物车.png" alt=""></a>
+							<a href="#"><img src="images/聚收藏.png" alt=""></a>
+						</div>
+					</div>
+					<div class="didi clearfix">
+						<img src="images/img7desk.jpg" alt="">
+						<a href="#">Desk Clock</a>
+						<a href="#">Hi-Tech</a>
+						<span>$55.00</span>
+						<div class="tb clearfix">
+							<a href="#"><img src="images/购物车.png" alt=""></a>
+							<a href="#"><img src="images/聚收藏.png" alt=""></a>
+						</div>
+					</div>
+					<div class="didi clearfix">
+						<img src="images/img8alar.jpg" alt="">
+						<a href="#">Alarm Clock</a>
+						<a href="#">Footwear</a>
+						<span>$55.00</span>
+						<div class="tb clearfix">
+							<a href="#"><img src="images/购物车.png" alt=""></a>
+							<a href="#"><img src="images/聚收藏.png" alt=""></a>
+						</div>
+					</div>
+					<div class="didi clearfix">
+						<img src="images/img9clock.jpg" alt="">
+						<a href="#">Desk Clock</a>
+						<a href="#">Footwear</a>
+						<span>$55.00</span>
+						<div class="tb clearfix">
+							<a href="#"><img src="images/购物车.png" alt=""></a>
+							<a href="#"><img src="images/聚收藏.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+	<section class="clearfix">
+		<!-- 封面图 start -->
+		<div class="sper">
+			<div class="swiper-container gallery-top">
+	        <div class="swiper-wrapper">
+	           <div class="swiper-slide" style="background-image:url(images/img13.jpg)"></div>
+	            <div class="swiper-slide" style="background-image:url(images/img23.jpg)"></div>
+	            <div class="swiper-slide" style="background-image:url(images/img333.jpg)"></div>
+	        </div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next swiper-button-white"></div>
+	        <div class="swiper-button-prev swiper-button-white"></div>
+	    </div>
+	    <div class="swiper-container gallery-thumbs">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide" style="background-image:url('images/img11.jpg');width:205px;"></div>
+	            <div class="swiper-slide" style="background-image:url('images/img22.jpg');width:205px;"></div>
+	            <div class="swiper-slide" style="background-image:url('images/img33.jpg');width:205px;"></div>
+	        </div>
+	    </div>
+    </div>
+<!-- 封面图end -->
+		<div class="g-px clearfix">
+			<div class="g-mb-30">
+				<h1>Men's Water<br>Resistant Jacket</h1>
+				<p>
+					Dress is the "rain mac" version of our beloved essential the Unify Parka. Crafted from a water resistant fluid memory fabric to create an elegant draped effect when thrown on, this lightweight shell will take you from season to season and protect you from that unexpected shower.
+				</p>
+			</div>
+			<div class="g-mb-30">
+				<h2>PRICE</h2>
+				<span>$99.00</span>
+				<s>$101.00</s>
+			</div>
+			<div class="g-brd-y clearfix">
+				<a href="javascript:void(0)" class="clearfix">
+					<h5>Details</h5>
+					<span><img src="images/箭头 下.png" alt=""></span>
+				</a>
+			</div>
+			<div class="collapse">
+				<p>SHELL: 100% POLYESTER</p>
+				<p>Always check the care label instructions.</p>
+				<p>Professional dry clean only. Remove all detachable parts before cleaning. Do not iron.</p>
+				<p>(Navy: Avoid contact with light coloured fabrics and upholstery especially whilst damp.)</p>
+			</div>
+			<div class="g-brd-y clearfix">
+				<h5>Colour</h5>
+				<ul class="clearfix">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="size clearfix">
+				<h5>Size</h5>
+				<ul>
+					<li>S</li>
+					<li>M</li>
+					<li>L</li>
+					<li>XL</li>
+					<li>XXL</li>
+				</ul>
+			</div>
+			<div class="g-brd-y clearfix">
+				<h5>Quantity</h5>
+				<div class="quanti">
+					<input type="text" value="1">
+					<div class="in-add">
+						<span class="jia clearfix"><img src="images/箭头 上.png" alt=""></span>
+						<span class="jian clearfix"><img src="images/箭头 下 (1).png" alt=""></span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cart">Add to Cart<i class="iconfont icon-gouwuche-copy"></i></div>
+				<div class="Wishlist">Add to Wishlist<img src="images/收 藏.png" alt=""></div>
+			</div>
+			<ul class="tablist">
+				<li><a href="javascript:void(0)" class="show1">RETURNS</a></li>
+				<li><a href="javascript:void(0)">VIEW SIZE GUIDE</a></li>
+				<li><a href="javascript:void(0)">DELIVERY</a></li>
+			</ul>
+			<div class="tab-b">
+				<div class="return active">
+					<p>You can return/exchange your orders in Unify E-commerce. For more information, read our<a href="javascript:void(0)">FAQ.</a></p>
+				</div>
+				<div class="nav-1">
+					<h4>General Clothing Size Guide</h4>
+					<table>
+						<tr class="g-color">
+							<td>Unify Size (UK)</td>
+							<td>S</td>
+							<td>M</td>
+							<td>L</td>
+							<td>XL</td>
+							<td>XXL</td>
+						</tr>
+						<tr class="g-color">
+							<td>UK</td>
+							<td>6</td>
+							<td>8</td>
+							<td>10</td>
+							<td>12</td>
+							<td>14</td>
+						</tr>
+						<tr class="g-color">
+							<td>Europe</td>
+							<td>32</td>
+							<td>34</td>
+							<td>36</td>
+							<td>38</td>
+							<td>40</td>
+						</tr>
+						<tr class="g-color">
+							<td>US</td>
+							<td>2</td>
+							<td>4</td>
+							<td>6</td>
+							<td>8</td>
+							<td>10</td>
+						</tr>
+						<tr class="g-color">
+							<td>Australia</td>
+							<td>6</td>
+							<td>8</td>
+							<td>10</td>
+							<td>12</td>
+							<td>14</td>
+						</tr>
+						<tr class="g-color">
+							<td>Japan</td>
+							<td>7</td>
+							<td>9</td>
+							<td>11</td>
+							<td>13</td>
+							<td>15</td>
+						</tr>
+					</table>
+				</div>		
+				<div class="nav-3">
+					<div>
+						<h6>Destination</h6>
+						<h6>Delivery type</h6>
+						<h6>Delivery time</h6>
+						<h6>Cost</h6>
+					</div>
+					<div>
+						<ul>
+							<li>UK</li>
+							<li>Standard delivery</li>
+							<li>2-3 Working days</li>
+							<li>$5.5</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="li-1"></li>
+							<li>Next day</li>
+							<li>Order before 12pm monday - thursday and receive it the next day</li>
+							<li>$9.5</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="li-1"></li>
+							<li>Saturday delivery</li>
+							<li>Saturday delivery for orders placed before 12pm on friday</li>
+							<li>$12.00</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>Europe</li>
+							<li>Standard delivery</li>
+							<li>3-9 Working days</li>
+							<li>$20.00</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>America</li>
+							<li>Standard delivery</li>
+							<li>3-9 Working days</li>
+							<li>$25.00</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="free-bg">
+			<div class="free">
+				<div class="m-l">
+					<img src="images/货车.png" alt="">
+					<div class="shipping">
+						<span>FREE SHIPPING</span>
+						<span>In 2-3 Days</span>
+					</div>
+				</div>
+				<div class="m-d">
+					<img src="images/退货.png" alt="">
+					<div class="shipping">
+						<span>FREE RETURNS</span>
+						<span>No Questions Asked</span>
+					</div>
+				</div>
+				<div class="m-r">
+					<img src="images/24小时.png" alt="">
+					<div class="shipping">
+						<span>FREE 24</span>
+						<span>Days Storage</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="main clearfix">
+		<div class="top clearfix">
+			<div class="word">
+				<span>THE DETAILS</span>
+				<h3>High Quality Materials</h3>
+				<p>Dress is the "rain mac" version of our beloved essential the Unify Parka. Crafted from a water resistant fluid memory fabric to create an elegant draped effect when thrown on, this lightweight shell will take you from season to season and protect you from that unexpected shower.</p>
+			</div>
+			<div class="pic">
+				<img src="images/img1.jpg" alt="">
+			</div>
+		</div>
+		<div class="mid">
+			<div class="pic">
+				<img src="images/img2.jpg" alt="">
+			</div>
+			<div class="word">
+				<span>THE CRAFTMANSHIP</span>
+				<h3>Reimagined Blue Color through New Materials</h3>
+				<p>We believe in redefining classic silhouettes into modern pieces that function for busy people with busy lives. We want to create clothing that people will love and treasure for years to come – to become that trusty go-to you can't live without.</p>
+			</div>
+		</div>
+		<div class="down clearfix">
+			<div class="word">
+				<span>THE CARE GUIDE</span>
+				<h3>Get the Best out of Unify</h3>
+				<p>Crafted from a water resistant fluid memory fabric to create an elegant draped effect when thrown on, this lightweight shell will take you from season to season and protect you from that unexpected shower.</p>
+			</div>
+			<div class="pic">
+				<img src="images/img3.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="Latest">
+		<div class="Latest-1 clearfix">
+			<div class="text">
+				<h2>Latest Trends</h2>
+				<p>We want to create a range of beautiful, practical and modern outerwear that doesn't cost the earth.</p>
+			</div>
+			<div class="swiper-container swiper-container2">
+				
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="images/img1(5).jpg" alt="">
+			        	<div class="jacket">
+				        	<a href="javascript:void(0)">Unstructured Jacket</a>
+				        	<span>$159.99</span>
+			        	</div>
+			        </div>
+			        <div class="swiper-slide"><img src="images/img2(7).jpg" alt="">
+			        	<div class="jacket">
+				        	<a href="javascript:void(0)">Unstructured Jacket</a>
+				        	<span>$159.99</span>
+			        	</div>
+			        </div>
+			        <div class="swiper-slide"><img src="images/img2(8).jpg" alt="">
+			        	<div class="jacket">
+				        	<a href="javascript:void(0)">Unstructured Jacket</a>
+				        	<span>$159.99</span>
+			        	</div>
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev"><img src="images/左右.png" alt=""></div>
+			    <div class="swiper-button-next"><img src="images/左右_1.png" alt=""></div>   
+			     
+			</div>
+				
+			<div class="swiper-container swiper-container3">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="images/img4(2).jpg" alt="">
+			        	<div class="jacket">
+				        	<a href="javascript:void(0)">Exclusive Coat by Milano</a>
+				        	<span>$676.00</span>
+			        	</div>
+			        </div>
+			        <div class="swiper-slide"><img src="images/img5(1).jpg" alt="">
+			        	<div class="jacket">
+				        	<a href="javascript:void(0)">Exclusive Coat by Milano</a>
+				        	<span>$676.00</span>
+			        	</div>
+			        </div>
+			        <div class="swiper-slide"><img src="images/img6(1).jpg" alt="">
+			        	<div class="jacket">
+				        	<a href="javascript:void(0)">Exclusive Coat by Milano</a>
+				        	<span>$676.00</span>
+			        	</div>
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			    
+			</div>
+			<div class="swiper-container swiper-container4">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="images/img7(1).jpg" alt="">
+			        	<div class="jacket">
+				        	<a href="javascript:void(0)">T-Shirt by Gucci</a>
+				        	<span>$121.00</span>
+			        	</div>
+			        </div>
+			        <div class="swiper-slide"><img src="images/img8(1).jpg" alt="">
+			        	<div class="jacket">
+				        	<a href="javascript:void(0)">T-Shirt by Gucci</a>
+				        	<span>$121.00</span>
+			        	</div>
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			   
+			</div>
+			<div class="swiper-container swiper-container5">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="images/img9(1).jpg" alt="">
+						<div class="jacket">
+				        	<a href="javascript:void(0)">Scarf by Alvara</a>
+				        	<span>$87.99</span>
+			        	</div>
+			        </div>
+			        <div class="swiper-slide"><img src="images/img10.jpg" alt="">
+			        	<div class="jacket">
+				        	<a href="javascript:void(0)">Scarf by Alvara</a>
+				        	<span>$87.99</span>
+			        	</div>
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev"><img src="images/左右.png" alt=""></div>
+			    <div class="swiper-button-next"><img src="images/左右_1.png" alt=""></div>
+			</div>
+			<div class="g-bg-white">
+					<h4>CHOOSE SIZE</h4>
+					<div class="sz clearfix">
+						<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
+						<div class="chima">
+							<a href="javascript:void(0)">S</a>
+							<a href="javascript:void(0)">M</a>
+							<a href="javascript:void(0)">L</a>
+						</div>
+						<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+					</div>
+				</div>
+				<div class="g-bg-white">
+					<h4>CHOOSE SIZE</h4>
+					<div class="sz clearfix">
+						<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
+						<div class="chima">
+							<a href="javascript:void(0)">S</a>
+							<a href="javascript:void(0)">M</a>
+							<a href="javascript:void(0)">L</a>
+						</div>
+						<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+					</div>
+				</div>
+				<div class="g-bg-white">
+					<h4>CHOOSE SIZE</h4>
+					<div class="sz clearfix">
+						<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
+						<div class="chima">
+							<a href="javascript:void(0)">S</a>
+							<a href="javascript:void(0)">M</a>
+							<a href="javascript:void(0)">L</a>
+						</div>
+						<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+					</div>
+				</div>
+				<div class="g-bg-white">
+					<h4>CHOOSE SIZE</h4>
+					<div class="sz clearfix">
+						<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
+						<div class="chima">
+							<a href="javascript:void(0)">S</a>
+							<a href="javascript:void(0)">M</a>
+							<a href="javascript:void(0)">L</a>
+						</div>
+						<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+					</div>
+				</div>
+		</div>
+		
+	</div>
+	<div class="blog">
+		<div class="Latest-1 clearfix">
+			<div class="text">
+				<h2>Blog News</h2>
+				<p>Keep in touch with the latest blogs & news</p>
+			</div>
+			<ul class="pic-44">
+				<li>
+					<div class="color1">
+						<div class="sport">
+						<span>sport</span>
+						<h2>24 Hours in Shopping</h2>
+						<p>
+							<a href="javascript:void(0)">By, DAN SHAW.MAY 31, 2017</a>
+						</p>
+						<a href="javascript:void(0)">READ MORE</a>
+					</div>
+					</div>
+					<img src="images/img1(6).jpg" alt="">
+					
+				</li>
+				<li>
+					<div class="color1">
+						<div class="sport">
+						<span>design</span>
+						<h2>How to Design with Colors</h2>
+						<p>
+							<a href="javascript:void(0)">By, DAN SHAW.MAY 31, 2017</a>
+						</p>
+						<a href="javascript:void(0)">READ MORE</a>
+					</div>
+					</div>
+					<img src="images/img2(6).jpg" alt="">
+					
+				</li>
+				<li>
+					<div class="color1">
+						<div class="sport">
+						<span>photography</span>
+						<h2>Stunning Woman's Capture</h2>
+						<p>
+							<a href="javascript:void(0)">By, DAN SHAW.MAY 31, 2017</a>
+						</p>
+						<a href="javascript:void(0)">READ MORE</a>
+					</div>
+					</div>
+					<img src="images/img3(6).jpg" alt="">
+					
+				</li>
+			</ul>
+			<div class="do clearfix">
+				<h3>Subscribe</h3>
+					<div class="se">
+						<input type="text" placeholder="Enter your email">
+						<span>
+							<button type="submit">Submit</button>
+						</span>
+					</div>
+				</div>
+			<div class="share-1 clearfix">
+				<ul class="clearfix">
+					<li><a href="javascript:void(0)"><i class="iconfont icon-facebookf"></i></a></li>
+					<li><a href="javascript:void(0)"><i class="iconfont icon-bird"></i></a></li>
+					<li><a href="javascript:void(0)"><img src="images/相机.png" alt=""></a></li>
+					<li><a href="javascript:void(0)"><img src="images/谷歌+.png" alt=""></a></li>
+					<li><a href="javascript:void(0)"><img src="images/in.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-top clearfix">
+			<div class="left clearfix">
+				<h2>Products</h2>
+				<div class="le">
+					<ul>
+						<li><a href="javascript:void(0)">SmartPhone</a></li>
+						<li><a href="javascript:void(0)">Laptop</a></li>
+						<li><a href="javascript:void(0)">Mouse</a></li>
+						<li><a href="javascript:void(0)">Monitor</a></li>
+						<li><a href="javascript:void(0)">Watch</a></li>
+					</ul>
+				</div>
+				<div class="le">
+					<ul>
+						<li><a href="javascript:void(0)">Tablet</a></li>
+						<li><a href="javascript:void(0)">Accessorie</a></li>
+						<li><a href="javascript:void(0)">Mouses Pad</a></li>
+						<li><a href="javascript:void(0)">Handset</a></li>
+						<li><a href="javascript:void(0)">Phablet</a></li>
+					</ul>
+				</div>
+				<div class="le">
+					<ul>
+						<li><a href="javascript:void(0)">Speakers</a></li>
+						<li><a href="javascript:void(0)">Camera</a></li>
+						<li><a href="javascript:void(0)">Play Station</a></li>
+						<li><a href="javascript:void(0)">Xbox</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mid clearfix">
+				<h2>Brands</h2>
+				<div class="le">
+					<ul>
+						<li><a href="javascript:void(0)">Logitech</a></li>
+						<li><a href="javascript:void(0)">Samsung</a></li>
+						<li><a href="javascript:void(0)">Microsoft</a></li>
+						<li><a href="javascript:void(0)">Apple</a></li>
+					</ul>
+				</div>
+				<div class="le">
+					<ul>
+						<li><a href="javascript:void(0)">Huawei</a></li>
+						<li><a href="javascript:void(0)">Motorola</a></li>
+						<li><a href="javascript:void(0)">Sony</a></li>
+						<li><a href="javascript:void(0)">Nokia</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="down clearfix">
+				<h2>Contacts</h2>
+				<div class="le">
+					<ul>
+						<img src="images/地址.png" alt=""><li>Unit 25 Suite 3, 925 Prospect PI New York Avenue</li>
+						<img src="images/邮箱.png" alt=""><li>htmlstream@support.com</li>
+						<img src="images/电话.png" alt=""><li>+32 333 444 555</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="f-d-bg">
+			<div class="footer-down">
+				<p>2017 © Htmlstream. All Rights Reserved.</p>
+				<ul class="clearfix">
+					<li>
+						<img src="images/visa1.jpg" alt="">
+						<a href="javascript:void(0)">
+							<img src="images/cc-visa.png" alt="">
+						</a>
+					</li>
+					<li><img src="images/paypal1.jpg" alt=""><a href="javascript:void(0)"><img src="images/cc-paypal.png" alt=""></a></li>
+					<li><img src="images/master1.jpg" alt=""><a href="javascript:void(0)"><img src="images/cc-mastercard.png" alt=""></a></li>
+					<li><img src="images/stripe1.jpg" alt=""><a href="javascript:void(0)"><img src="images/cc-stripe.png" alt=""></a></li>
+					<li><img src="images/discover1.jpg" alt=""><a href="javascript:void(0)"><img src="images/cc-discover.png" alt=""></a></li>
+					<li><img src="images/jcb.jpg" alt=""><a href="javascript:void(0)"><img src="images/cc-jcb.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/idangerous.swiper.min.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script>
+	    var galleryTop = new Swiper('.gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,
+        loop:true,
+        slidesPerView: 'auto',
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 3,
+        loop:true,
+        slidesPerView: 'auto',
+        loopedSlides:3,
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
+
+    var mySwiper = new Swiper ('.swiper-container2', {
+    loop: true,
+   
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+    
+  })
+    var mySwiper = new Swiper ('.swiper-container5', {
+    loop: true,
+   
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+    
+  })
+
+    var mySwiper = new Swiper ('.swiper-container3', {
+    loop: true,
+    autoplay : 2000,
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+ 
+    
+  })
+
+    var mySwiper = new Swiper ('.swiper-container4', {
+    loop: true,
+    autoplay : 2000,
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+ 
+    
+  })
+
+		$(".g-brd-y:first span img").click(function(){
+			$(".collapse").toggle()
+		})
+
+		$(".g-brd-y ul li").click(function(){
+			$(this).css("border-color","#777")
+		})
+
+		$(".size ul li").click(function(){
+			var ind = $(this).index()
+			$(this).eq(ind).addClass("color").siblings().removeClass("color")			
+		})
+		$(".quanti .jia").click(function(){
+			  var n = $(".quanti>input").val()
+			  var num = Number(n) + 1
+			 $(".quanti>input").val(num)
+			 console.log(num)
+
+		});
+		$(".quanti .jian").click(function(){
+			  var n = $(".quanti>input").val()
+			  var num = Number(n) - 1		
+			  if(num <= 1){
+			 	num = 1
+			 }
+			 $(".quanti>input").val(num)
+		});
+
+		$(".tablist li a").click(function(){
+			var ind = $(this).parent().index()
+			$(".tab-b>div").eq(ind).addClass("active")
+			$(".tab-b>div").eq(ind).siblings().removeClass("active")
+		})
+
+		$(".u-basket a").mouseenter(function(){
+			$(".gwc").css("display","block")
+		})
+		$(".gwc").mouseleave(function(){
+			$(this).css("display","none")
+		})
+
+		$(".nav-bar>li:eq(1)").mouseenter(function(){
+			$(".grid").css("display","block")
+		})
+		$(".nav-bar>li:eq(1)").mouseleave(function(){
+			$(".grid").css("display","none")
+		})
+
+		$(".nav-bar>li:nth-child(3) a").mouseenter(function(){
+			$(".pic-2").css("display","block")
+		})
+		$(".nav-bar>li:nth-child(3)").mouseleave(function(){
+			$(".pic-2").css("display","none")
+		})
+
+		$(".nav-bar>li:nth-child(4) a").mouseenter(function(){
+			$(".pic-3").css("display","block")
+		})
+		$(".nav-bar>li:nth-child(4)").mouseleave(function(){
+			$(".pic-3").css("display","none")
+		})
+
+		$(".nav-bar>li:nth-child(5) a").mouseenter(function(){
+			$(".pic-4").css("display","block")
+		})
+		$(".nav-bar>li:nth-child(5)").mouseleave(function(){
+			$(".pic-4").css("display","none")
+		})
+
+		$(".nav-bar>li:nth-child(6) a").mouseenter(function(){
+			$(".pic-5").css("display","block")
+		})
+		$(".nav-bar>li:nth-child(6)").mouseleave(function(){
+			$(".pic-5").css("display","none")
+		})
+
+		$(".nav-bar>li:nth-child(7) a").mouseenter(function(){
+			$(".pic-6").css("display","block")
+		})
+		$(".nav-bar>li:nth-child(7)").mouseleave(function(){
+			$(".pic-6").css("display","none")
+		})
+
+		$(".pic-d a").click(function(){
+			var ind = $(this).index()	
+			$(".picbox>a").eq(ind).find("img").addClass("show")
+			$(".picbox>a").eq(ind).siblings("a").find("img").removeClass("show")
+		})
+		$(".g-brd-y>ul>li").click(function(){
+			var index = $(this).index()
+			$(this).css("border","black")
+		})
+
+		$(".color1").mouseenter(function(){
+			$(this).find(".sport").css("bottom",38)
+			$(this).find(".sport h2").css("color","#58c7a7")
+		})
+
+		$(".color1").mouseleave(function(){
+			$(this).find(".sport").css("bottom",-30)
+			$(this).find(".sport h2").css("color","#fff")
+		})
+		
+		$(".search").click(function(){
+			$(".searchform").toggle()
+		})
+
+		$(".footer-down li").hover(function(){
+			var ind = $(this).index()
+			$(".footer-down li").eq(ind).find("img").css("display","block")
+		},function(){
+			$(".footer-down li").children("img").css("display","none")
+		})
+</script>
+</body>
+</html>
