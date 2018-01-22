@@ -239,6 +239,7 @@
 			float: left;
 			padding-top: 15px;
 			padding-bottom: 15px;
+			margin-left: -79px;
 		}
 
 		.g-brd-y a{
@@ -306,6 +307,7 @@
 		    padding-top: 15px;
 		    padding-bottom: 15px;
 		    border-top: solid 1px #ddd;
+		        margin-left: -79px;
 		}
 
 		.size h5{
@@ -355,29 +357,32 @@
 
 		
 
-		.row{
+		.row11{
 			float: left;
+			width: 365px;
 			border-top: 1px solid #ccc;
     		padding-top: 29px;
+    		margin-right: -23px;
+			    margin-left: -79px;
 		}
 
-		.row>div{
+		.row11>div{
 			padding: 15px 24px;
 		    border-radius: 0.25rem;
 		}
 
-		.row .cart{
+		.row11 .cart{
 			color: #fff;
    			background-color: #3bb18f;
    			float: left;
    			cursor: pointer;
 		}
 
-		.row .cart:hover{
+		.row11 .cart:hover{
 			background-color: #58c7a7;
 		}
 
-		.row .Wishlist{
+		.row11 .Wishlist{
 			float: right;
 			color: #999;
 			border: 1px solid #777;
@@ -385,17 +390,17 @@
 			cursor: pointer;
 		}
 
-		.row .Wishlist:hover{
+		.row11 .Wishlist:hover{
 			background-color: #000;
 		}
 
-		.row .Wishlist img{
+		.row11 .Wishlist img{
 			width: 12px;
 			height: 12px;
 			margin-left: 15px;
 		}
 
-		.row .cart i{
+		.row11 .cart i{
 			font-size: 12px;
 			margin-left: 15px;
 		}
@@ -404,12 +409,19 @@
 			font-size: 0.85714rem;
 			float: left;
     		margin-top: 29px;
+    		width: 365px;
+    		margin-left: -79px;
 		}
 
 		.tablist li{
 			float: left;
 			border-bottom: 1px solid;
 			padding-bottom: 4px;
+
+		}
+
+		.tablist a:hover{
+			    text-decoration: none;
 		}
 
 		.tablist li:nth-child(2){
@@ -418,6 +430,10 @@
 
 		.tablist li a{
 			color: #000;
+		}
+
+		.tab-b {
+			margin-left: -79px;
 		}
 
 		.return p{
@@ -477,6 +493,7 @@
 			float: left;
 			margin-top: 8px;
 			display: none;
+		 	width: 365px;
 		}
 
 		.nav-3>div{
@@ -611,7 +628,7 @@
 		.Latest-1{
 			padding-bottom: 5rem;
 			padding-top: 7.14286rem;
-			width: 60%;
+			width: 61%;
 			padding-right: 15px;
     		padding-left: 15px;
     		margin:0 auto;
@@ -760,12 +777,12 @@
 		
 
 		.pic-2{
-			width: 1000%;
+			width: 943%;
 			margin:0 auto;
 			float: left;
 		    position: absolute;
 		    z-index: 99;
-		    left: -478%;
+		    left: -405%;
 		    background-color: #fff;
 		    border-top: 2px solid #3bb18f;
 			display: none;
@@ -775,7 +792,7 @@
 		}
 
 		.pic-3{
-			width: 100%;
+			width: 812%;
 			margin:0 auto;
 			float: left;
 		    position: absolute;
@@ -1007,7 +1024,7 @@
 		}
 
 		.footer-top{
-			width: 100%;
+			width: 61%;
 			margin:0 auto;
 			padding-bottom: 80px;
 		}
@@ -1030,8 +1047,8 @@
 		}
 
 		.footer-top>div>div img{
-			width: 13px;
-			height: 12px;
+			width: 22px;
+			height: 27px;
 			padding-top: 7px;
 		}
 
@@ -1074,7 +1091,7 @@
 		}
 
 		.footer-down{
-			width: 100%;
+			width: 61%;
 			margin:0 auto;
 			padding-bottom: 5.14286rem;
 			padding-top: 3.57143rem;
@@ -1299,7 +1316,7 @@
 	}
 
 	.pic-4{
-		width: 100%;
+		width: 1000%;
 		margin:0 auto;
 		float: left;
 		position: absolute;
@@ -1310,7 +1327,7 @@
 	}
 
 	.pic-5{
-		width: 100%;
+		width: 913%;
 		margin:0 auto;
 		float: left;
 		position: absolute;
@@ -1325,13 +1342,25 @@
 		display: none;
 	}
 
+	.input-group {
+		display: flex;
+	}
+
+	.form-control,.btn {
+		border-radius: 0;
+	}
+
+	.btn {
+	 	padding: 7px 12px;
+	}
+
 	.pic-6{
-		width: 100%;
+		width: 1053%;
 		margin:0 auto;
 		float: left;
 		position: absolute;
 		z-index: 99;
-		left: -960%;
+		left: -935%;
 		border-top: 2px solid #3bb18f;
 		padding: 27px;
 		background-color: #fff;
