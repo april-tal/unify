@@ -101,12 +101,10 @@ var galleryTop = new Swiper('.gallery-top', {
 			$(".tab-b>div").eq(ind).siblings().removeClass("active")
 		})
 
-		$(".u-basket a").mouseenter(function(){
-			$(".gwc").css("display","block")
+		$(".u-basket a").click(function(){
+			$(".gwc").slideToggle(300)
 		})
-		$(".gwc").mouseleave(function(){
-			$(this).css("display","none")
-		})
+		
 
 		$(".nav-bar>li:eq(1)").mouseenter(function(){
 			$(".grid").css("display","block")
@@ -149,6 +147,15 @@ var galleryTop = new Swiper('.gallery-top', {
 		$(".nav-bar>li:nth-child(7)").mouseleave(function(){
 			$(".pic-6").css("display","none")
 		})
+		$(".menu").click(function(){
+			if($(".nav-bar").hasClass("visuallyhidden")){
+				$('.nav-bar').removeClass("visuallyhidden");
+				$(".menu").addClass("closer");
+			} else {
+				$('.nav-bar').addClass("visuallyhidden");
+				$(".menu").removeClass("closer")
+			}
+		})
 
 		$(".pic-d a").click(function(){
 			var ind = $(this).index()	
@@ -161,17 +168,18 @@ var galleryTop = new Swiper('.gallery-top', {
 		})
 
 		$(".color1").mouseenter(function(){
-			$(this).find(".sport").css("bottom",38)
+			$(this).find(".sport").css("bottom",7+'%')
 			$(this).find(".sport h2").css("color","#58c7a7")
+			$(".pic-44 img").css("width","calc(100% + 60px)")
 		})
 
 		$(".color1").mouseleave(function(){
-			$(this).find(".sport").css("bottom",-30)
+			$(this).find(".sport").css("bottom",-7+'%')
 			$(this).find(".sport h2").css("color","#fff")
 		})
 		
 		$(".search").click(function(){
-			$(".searchform").toggle()
+			$(".searchform").slideToggle(200)
 		})
 
 		$(".footer-down li").hover(function(){

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -30,64 +31,67 @@
 				<li><a href="#">FAQ |</a></li>
 				<li><a href="#">LOGIN</a></li>
 			</ul>
-			<div class="u-basket"><a href="#"><i class="iconfont icon-gouwuche-copy"></i></a></div>
-			<div class="gwc">
-				<div class="auto">
-					<div class="t clearfix">
-						<img src="images/眼镜.jpg" alt="">
-						<div class="w">
-							<span>Black Glasses</span>
-							<span>1 x $400.00</span>
+			<div class="other">
+				<div class="u-basket"><a href="#"><i class="iconfont icon-gouwuche-copy"></i></a></div>
+				<div class="gwc">
+					<div class="auto">
+						<div class="t clearfix">
+							<img src="images/眼镜.jpg" alt="">
+							<div class="w">
+								<span>Black Glasses</span>
+								<span>1 x $400.00</span>
+							</div>
+						</div>
+						<div class="m clearfix">
+							<img src="images/手套.jpg" alt="">
+							<div class="w">
+								<span>Black Glasses</span>
+								<span>1 x $400.00</span>
+							</div>
+						</div>
+						<div class="d clearfix">
+							<img src="images/鞋子.jpg" alt="">
+							<div class="w">
+								<span>Black Glasses</span>
+								<span>1 x $400.00</span>
+							</div>
+						</div>
+						<div class="e clearfix">
+							<img src="images/img4.jpg" alt="">
+							<div class="w">
+								<span>Black Glasses</span>
+								<span>1 x $400.00</span>
+							</div>
 						</div>
 					</div>
-					<div class="m clearfix">
-						<img src="images/手套.jpg" alt="">
-						<div class="w">
-							<span>Black Glasses</span>
-							<span>1 x $400.00</span>
+					<div class="SUBTOTAL">
+						<div class="sp">
+							<span>SUBTOTAL</span>
+							<span>$1200.00</span>
 						</div>
-					</div>
-					<div class="d clearfix">
-						<img src="images/鞋子.jpg" alt="">
-						<div class="w">
-							<span>Black Glasses</span>
-							<span>1 x $400.00</span>
-						</div>
-					</div>
-					<div class="e clearfix">
-						<img src="images/img4.jpg" alt="">
-						<div class="w">
-							<span>Black Glasses</span>
-							<span>1 x $400.00</span>
+						<div class="view">
+							<a href="#">View Cart</a>
+							<a href="#">Checkout</a>
 						</div>
 					</div>
 				</div>
-				<div class="SUBTOTAL">
-					<div class="sp">
-						<span>SUBTOTAL</span>
-						<span>$1200.00</span>
+				<div class="search"><a href="#"><i class="iconfont icon-fangdajing"></i></a></div>
+				<form action="" class="searchform">
+					<div class="input-group clearfix">
+						<input type="text" class="form-control" placeholder="Enter Your Search Here...">
+						<div class="input-addon">
+							<button class="btn">Go</button>
+						</div>
 					</div>
-					<div class="view">
-						<a href="#">View Cart</a>
-						<a href="#">Checkout</a>
-					</div>
-				</div>
+				</form>
 			</div>
-			<div class="search"><a href="#"><i class="iconfont icon-fangdajing"></i></a></div>
-			<form action="" class="searchform">
-				<div class="input-group clearfix">
-					<input type="text" class="form-control" placeholder="Enter Your Search Here...">
-					<div class="input-addon">
-						<button class="btn">Go</button>
-					</div>
-				</div>
-			</form>
 		</div>
 	</div>
 	<div class="nav">
-		<div class="nav-list clearfix">
+		<div class="container clearfix">
 			<a href="#" class="logo"></a>
-			<ul class="nav-bar clearfix">
+			<a href="javascript:void(0)" class="menu "></a>
+			<ul class="nav-bar visuallyhidden clearfix">
 				<li><a href="#">HOME</a></li>
 				<li><a href="#">Pages</a><img src="images/箭头 下.png" alt="">
 					<ul class="grid">
@@ -100,8 +104,8 @@
 					</ul>
 				</li>
 				<li><a href="#">Clothes</a><img src="images/箭头 下.png" alt="">
-					<div class="pic-2">
-						<div class="pic-1">
+					<div class="row pic-2">
+						<div class="col-sm-6 col-lg-3 pic-1">
 							<img src="images/img1(1).jpg" alt="">
 							<p>
 								<span>Summer shorts</span>
@@ -109,7 +113,7 @@
 								<span>$52.00</span>
 							</p>						
 						</div>
-						<div class="pic-1">
+						<div class="col-sm-6 col-lg-3 pic-1">
 							<img src="images/img2(1).jpg" alt="">
 							<p>
 								<span>Stylish shirt</span>
@@ -117,7 +121,7 @@
 								<span>$99.00</span>
 							</p>						
 						</div>
-						<div class="pic-1">
+						<div class="col-sm-6 col-lg-3 pic-1">
 							<img src="images/img3(1).jpg" alt="">
 							<p>
 								<span>Classic jacket</span>
@@ -125,7 +129,7 @@
 								<span>$49.99</span>
 							</p>						
 						</div>
-						<div class="pic-1">
+						<div class="col-sm-6 col-lg-3 pic-1">
 							<img src="images/img4(1).jpg" alt="">
 							<p>
 								<span>Wool lined parka</span>
@@ -136,18 +140,18 @@
 					</div>
 				</li>
 				<li><a href="#">Collections</a><img src="images/箭头 下.png" alt="">
-					<div class="pic-3 clearfix">
-						<div class="pi-1">
+					<div class="row pic-3 clearfix">
+						<div class="col-md-4 pi-1">
 							<img src="images/dnh.jpg" alt="">
 							<span>Collections</span>
 							<h2>Women</h2>
 						</div>
-						<div class="pi-1">
+						<div class="col-md-4 pi-1">
 							<img src="images/nh.jpg" alt="">
 							<span>Collections</span>
 							<h2>Children</h2>
 						</div>
-						<div class="pi-1">
+						<div class="col-md-4 pi-1">
 							<img src="images/nr.jpg" alt="">
 							<span>Collections</span>
 							<h2>Men</h2>
@@ -156,7 +160,7 @@
 				</li>
 				<li><a href="#">Promo</a><img src="images/箭头 下.png" alt="">
 					<div class="pic-4">
-						<div class="p-9">
+						<div class="col-md-8 p-9">
 							<img src="images/mt.jpg" alt="">
 							<div class="sp">
 								<span>SUMMER</span>
@@ -164,7 +168,7 @@
 								<span>Shop Now</span>
 							</div>
 						</div>
-						<div class="p-8">
+						<div class="col-md-4 p-8">
 							<img src="images/xie.png" alt="">
 							<div class="sp">
 								<span>Sneaker Shoes for Man</span>
@@ -174,8 +178,8 @@
 					</div>
 				</li>
 				<li><a href="#">Catalogue</a><img src="images/箭头 下.png" alt="">
-					<div class="pic-5 clearfix">
-						<div class="one">
+					<div class="row pic-5 clearfix">
+						<div class="col-md-4 one">
 							<h4>CLOTHES</h4>
 							<ul class="clearfix">
 								<li><a href="#">New in</a></li>
@@ -195,7 +199,7 @@
 								<li><a href="#">Sports</a></li>
 							</ul>
 						</div>
-						<div class="two">
+						<div class="col-md-4 two">
 							<h4>ACCESSORIES</h4>
 							<ul class="clearfix">
 								<li><a href="#">All accessories</a></li>
@@ -216,7 +220,7 @@
 								<li><a href="#">Tights</a></li>
 							</ul>
 						</div>
-						<div class="three">
+						<div class="col-md-4 three">
 							<h4>MIXED</h4>
 							<ul class="clearfix">
 								<li><a href="#">New in</a></li>
@@ -235,7 +239,7 @@
 								<li><a href="#">Tights</a></li>
 							</ul>
 						</div>
-						<div class="four">
+						<div class="col-md-4 four">
 							<h4>ACCESSORIES</h4>
 							<ul class="clearfix">
 								<li><a href="#">All accessories</a></li>
@@ -259,8 +263,8 @@
 					</div>
 				</li>
 				<li><a href="#">Sales</a><img src="images/箭头 下.png" alt="">
-					<div class="pic-6 clearfix">
-						<div class="didi clearfix">
+					<div class="row pic-6 clearfix">
+						<div class="col-md-6 col-lg-4 didi clearfix">
 							<img src="images/眼镜img1.jpg" alt="">
 							<a href="#">Glasses</a>
 							<a href="#">Accessories</a>
@@ -270,7 +274,7 @@
 								<a href="#"><img src="images/聚收藏.png" alt=""></a>
 							</div>
 						</div>
-						<div class="didi clearfix">
+						<div class="col-md-6 col-lg-4 didi clearfix">
 							<img src="images/img2手套.jpg" alt="">
 							<a href="#">Gloves</a>
 							<a href="#">Accessories</a>
@@ -280,7 +284,7 @@
 								<a href="#"><img src="images/聚收藏.png" alt=""></a>
 							</div>
 						</div>
-						<div class="didi clearfix">
+						<div class="col-md-6 col-lg-4 didi clearfix">
 							<img src="images/img3鞋.jpg" alt="">
 							<a href="#">Chukka Shoes</a>
 							<a href="#">Footwear</a>
@@ -290,7 +294,7 @@
 								<a href="#"><img src="images/聚收藏.png" alt=""></a>
 							</div>
 						</div>
-						<div class="didi clearfix">
+						<div class="col-md-6 col-lg-4 didi clearfix">
 							<img src="images/img4shoes.jpg" alt="">
 							<a href="#">Shoes</a>
 							<a href="#">Footwear</a>
@@ -300,7 +304,7 @@
 								<a href="#"><img src="images/聚收藏.png" alt=""></a>
 							</div>
 						</div>
-						<div class="didi clearfix">
+						<div class="col-md-6 col-lg-4 didi clearfix">
 							<img src="images/img5sneaker.jpg" alt="">
 							<a href="#">Sneaker</a>
 							<a href="#">Footwear</a>
@@ -310,7 +314,7 @@
 								<a href="#"><img src="images/聚收藏.png" alt=""></a>
 							</div>
 						</div>
-						<div class="didi clearfix">
+						<div class="col-md-6 col-lg-4 didi clearfix">
 							<img src="images/img6sn.jpg" alt="">
 							<a href="#">Sneaker</a>
 							<a href="#">Footwear</a>
@@ -320,7 +324,7 @@
 								<a href="#"><img src="images/聚收藏.png" alt=""></a>
 							</div>
 						</div>
-						<div class="didi clearfix">
+						<div class="col-md-6 col-lg-4 didi clearfix">
 							<img src="images/img7desk.jpg" alt="">
 							<a href="#">Desk Clock</a>
 							<a href="#">Hi-Tech</a>
@@ -330,7 +334,7 @@
 								<a href="#"><img src="images/聚收藏.png" alt=""></a>
 							</div>
 						</div>
-						<div class="didi clearfix">
+						<div class="col-md-6 col-lg-4 didi clearfix">
 							<img src="images/img8alar.jpg" alt="">
 							<a href="#">Alarm Clock</a>
 							<a href="#">Footwear</a>
@@ -340,7 +344,7 @@
 								<a href="#"><img src="images/聚收藏.png" alt=""></a>
 							</div>
 						</div>
-						<div class="didi clearfix">
+						<div class="col-md-6 col-lg-4 didi clearfix">
 							<img src="images/img9clock.jpg" alt="">
 							<a href="#">Desk Clock</a>
 							<a href="#">Footwear</a>
@@ -355,12 +359,12 @@
 			</ul>
 		</div>
 	</div>
-	<section class="clearfix">
+	<section class="container clearfix">
 		<!-- 封面图 start -->
-		<div class="content-sper">
-			<div class="sper">
+		<div class="content-sper clearfix">
+			<div class="col-lg-7 sper">
 				<div class="swiper-container gallery-top">
-			        <div class="swiper-wrapper">
+			        <div class="swiper-wrapper clearfix">
 			           <div class="swiper-slide" style="background-image:url(images/img13.jpg)"></div>
 			            <div class="swiper-slide" style="background-image:url(images/img23.jpg)"></div>
 			            <div class="swiper-slide" style="background-image:url(images/img333.jpg)"></div>
@@ -370,7 +374,7 @@
 			        <div class="swiper-button-prev swiper-button-white"></div>
 			    </div>
 			    <div class="swiper-container gallery-thumbs">
-			        <div class="swiper-wrapper">
+			        <div class="swiper-wrapper clearfix">
 			            <div class="swiper-slide" style="background-image:url('images/img11.jpg');width:205px;"></div>
 			            <div class="swiper-slide" style="background-image:url('images/img22.jpg');width:205px;"></div>
 			            <div class="swiper-slide" style="background-image:url('images/img33.jpg');width:205px;"></div>
@@ -378,7 +382,7 @@
 			    </div>
 	    	</div>
 			<!-- 封面图end -->
-			<div class="g-px clearfix">
+			<div class="col-lg-5 g-px clearfix">
 				<div class="g-mb-30">
 					<h1>Men's Water<br>Resistant Jacket</h1>
 					<p>
@@ -431,16 +435,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="row11">
+				<div class="row11 clearfix">
 					<div class="cart">Add to Cart<i class="iconfont icon-gouwuche-copy"></i></div>
 					<div class="Wishlist">Add to Wishlist<img src="images/收 藏.png" alt=""></div>
 				</div>
-				<ul class="tablist">
+				<ul class="tablist clearfix">
 					<li><a href="javascript:void(0)" class="show1">RETURNS</a></li>
 					<li><a href="javascript:void(0)">VIEW SIZE GUIDE</a></li>
 					<li><a href="javascript:void(0)">DELIVERY</a></li>
 				</ul>
-				<div class="tab-b">
+				<div class="tab-b clearfix">
 					<div class="return active">
 						<p>You can return/exchange your orders in Unify E-commerce. For more information, read our<a href="javascript:void(0)">FAQ.</a></p>
 					</div>
@@ -505,7 +509,7 @@
 							<h6>Cost</h6>
 						</div>
 						<div>
-							<ul>
+							<ul class="clearfix">
 								<li>UK</li>
 								<li>Standard delivery</li>
 								<li>2-3 Working days</li>
@@ -513,7 +517,7 @@
 							</ul>
 						</div>
 						<div>
-							<ul>
+							<ul class="clearfix">
 								<li class="li-1"></li>
 								<li>Next day</li>
 								<li>Order before 12pm monday - thursday and receive it the next day</li>
@@ -521,7 +525,7 @@
 							</ul>
 						</div>
 						<div>
-							<ul>
+							<ul class="clearfix">
 								<li class="li-1"></li>
 								<li>Saturday delivery</li>
 								<li>Saturday delivery for orders placed before 12pm on friday</li>
@@ -529,7 +533,7 @@
 							</ul>
 						</div>
 						<div>
-							<ul>
+							<ul class="clearfix">
 								<li>Europe</li>
 								<li>Standard delivery</li>
 								<li>3-9 Working days</li>
@@ -537,7 +541,7 @@
 							</ul>
 						</div>
 						<div>
-							<ul>
+							<ul class="clearfix">
 								<li>America</li>
 								<li>Standard delivery</li>
 								<li>3-9 Working days</li>
@@ -547,23 +551,25 @@
 					</div>
 				</div>
 			</div>
-			<div class="free-bg">
-				<div class="free">
-					<div class="m-l">
+			
+		</div>
+		<div class="free-bg">
+				<div class="row free">
+					<div class="col-md-4 m-l">
 						<img src="images/货车.png" alt="">
 						<div class="shipping">
 							<span>FREE SHIPPING</span>
 							<span>In 2-3 Days</span>
 						</div>
 					</div>
-					<div class="m-d">
+					<div class="col-md-4 m-d">
 						<img src="images/退货.png" alt="">
 						<div class="shipping">
 							<span>FREE RETURNS</span>
 							<span>No Questions Asked</span>
 						</div>
 					</div>
-					<div class="m-r">
+					<div class="col-md-4 m-r">
 						<img src="images/24小时.png" alt="">
 						<div class="shipping">
 							<span>FREE 24</span>
@@ -572,193 +578,200 @@
 					</div>
 				</div>
 			</div>
-		</div>
 	</section>
 	<div class="main clearfix">
-		<div class="top clearfix">
-			<div class="word">
+		<div class="row top clearfix">
+			<div class="col-md-6 word">
 				<span>THE DETAILS</span>
 				<h3>High Quality Materials</h3>
 				<p>Dress is the "rain mac" version of our beloved essential the Unify Parka. Crafted from a water resistant fluid memory fabric to create an elegant draped effect when thrown on, this lightweight shell will take you from season to season and protect you from that unexpected shower.</p>
 			</div>
-			<div class="pic">
+			<div class="col-md-6 pic">
 				<img src="images/img1.jpg" alt="">
 			</div>
 		</div>
-		<div class="mid">
-			<div class="pic">
-				<img src="images/img2.jpg" alt="">
-			</div>
-			<div class="word">
+		<div class="row mid clearfix">
+			<div class="col-md-6 word">
 				<span>THE CRAFTMANSHIP</span>
 				<h3>Reimagined Blue Color through New Materials</h3>
 				<p>We believe in redefining classic silhouettes into modern pieces that function for busy people with busy lives. We want to create clothing that people will love and treasure for years to come – to become that trusty go-to you can't live without.</p>
 			</div>
+			<div class="col-md-6 pic">
+				<img src="images/img2.jpg" alt="">
+			</div>
 		</div>
-		<div class="down clearfix">
-			<div class="word">
+		<div class="row down clearfix">
+			<div class="col-md-6 word">
 				<span>THE CARE GUIDE</span>
 				<h3>Get the Best out of Unify</h3>
 				<p>Crafted from a water resistant fluid memory fabric to create an elegant draped effect when thrown on, this lightweight shell will take you from season to season and protect you from that unexpected shower.</p>
 			</div>
-			<div class="pic">
+			<div class="col-md-6 pic">
 				<img src="images/img3.jpg" alt="">
 			</div>
 		</div>
 	</div>
 	<div class="Latest">
 		<div class="Latest-1 clearfix">
+			<div class="row g-mx-minus-10">
 			<div class="text">
 				<h2>Latest Trends</h2>
 				<p>We want to create a range of beautiful, practical and modern outerwear that doesn't cost the earth.</p>
 			</div>
-			<div class="swiper-container swiper-container2">
-				
-			    <div class="swiper-wrapper">
-			        <div class="swiper-slide"><img src="images/img1(5).jpg" alt="">
-			        	<div class="jacket">
-				        	<a href="javascript:void(0)">Unstructured Jacket</a>
-				        	<span>$159.99</span>
-			        	</div>
-			        </div>
-			        <div class="swiper-slide"><img src="images/img2(7).jpg" alt="">
-			        	<div class="jacket">
-				        	<a href="javascript:void(0)">Unstructured Jacket</a>
-				        	<span>$159.99</span>
-			        	</div>
-			        </div>
-			        <div class="swiper-slide"><img src="images/img2(8).jpg" alt="">
-			        	<div class="jacket">
-				        	<a href="javascript:void(0)">Unstructured Jacket</a>
-				        	<span>$159.99</span>
-			        	</div>
-			        </div>
-			    </div>
-			    <!-- 如果需要分页器 -->
-			    <div class="swiper-pagination"></div>
-			    
-			    <!-- 如果需要导航按钮 -->
-			    <div class="swiper-button-prev"><img src="images/左右.png" alt=""></div>
-			    <div class="swiper-button-next"><img src="images/左右_1.png" alt=""></div>   
-			     
-			</div>
-				
-			<div class="swiper-container swiper-container3">
-			    <div class="swiper-wrapper">
-			        <div class="swiper-slide"><img src="images/img4(2).jpg" alt="">
-			        	<div class="jacket">
-				        	<a href="javascript:void(0)">Exclusive Coat by Milano</a>
-				        	<span>$676.00</span>
-			        	</div>
-			        </div>
-			        <div class="swiper-slide"><img src="images/img5(1).jpg" alt="">
-			        	<div class="jacket">
-				        	<a href="javascript:void(0)">Exclusive Coat by Milano</a>
-				        	<span>$676.00</span>
-			        	</div>
-			        </div>
-			        <div class="swiper-slide"><img src="images/img6(1).jpg" alt="">
-			        	<div class="jacket">
-				        	<a href="javascript:void(0)">Exclusive Coat by Milano</a>
-				        	<span>$676.00</span>
-			        	</div>
-			        </div>
-			    </div>
-			    <!-- 如果需要分页器 -->
-			    <div class="swiper-pagination"></div>
-			    
-			    
-			</div>
-			<div class="swiper-container swiper-container4">
-			    <div class="swiper-wrapper">
-			        <div class="swiper-slide"><img src="images/img7(1).jpg" alt="">
-			        	<div class="jacket">
-				        	<a href="javascript:void(0)">T-Shirt by Gucci</a>
-				        	<span>$121.00</span>
-			        	</div>
-			        </div>
-			        <div class="swiper-slide"><img src="images/img8(1).jpg" alt="">
-			        	<div class="jacket">
-				        	<a href="javascript:void(0)">T-Shirt by Gucci</a>
-				        	<span>$121.00</span>
-			        	</div>
-			        </div>
-			    </div>
-			    <!-- 如果需要分页器 -->
-			    <div class="swiper-pagination"></div>
-			    
-			   
-			</div>
-			<div class="swiper-container swiper-container5">
-			    <div class="swiper-wrapper">
-			        <div class="swiper-slide"><img src="images/img9(1).jpg" alt="">
-						<div class="jacket">
-				        	<a href="javascript:void(0)">Scarf by Alvara</a>
-				        	<span>$87.99</span>
-			        	</div>
-			        </div>
-			        <div class="swiper-slide"><img src="images/img10.jpg" alt="">
-			        	<div class="jacket">
-				        	<a href="javascript:void(0)">Scarf by Alvara</a>
-				        	<span>$87.99</span>
-			        	</div>
-			        </div>
-			    </div>
-			    <!-- 如果需要分页器 -->
-			    <div class="swiper-pagination"></div>
-			    
-			    <!-- 如果需要导航按钮 -->
-			    <div class="swiper-button-prev"><img src="images/左右.png" alt=""></div>
-			    <div class="swiper-button-next"><img src="images/左右_1.png" alt=""></div>
-			</div>
-				<div class="g-bg-white">
-					<h4>CHOOSE SIZE</h4>
-					<div class="sz clearfix">
-						<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
-						<div class="chima">
-							<a href="javascript:void(0)">S</a>
-							<a href="javascript:void(0)">M</a>
-							<a href="javascript:void(0)">L</a>
+			<div class="row listone clearfix">
+				<div class="col-sm-6 col-lg-3 clearfix">
+					<div class="swiper-container swiper-container2">
+					    <div class="swiper-wrapper clearfix">
+					        <div class="swiper-slide"><img src="images/img1(5).jpg" alt="">
+					        	<div class="jacket">
+						        	<a href="javascript:void(0)">Unstructured Jacket</a>
+						        	<span>$159.99</span>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide"><img src="images/img2(7).jpg" alt="">
+					        	<div class="jacket">
+						        	<a href="javascript:void(0)">Unstructured Jacket</a>
+						        	<span>$159.99</span>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide"><img src="images/img2(8).jpg" alt="">
+					        	<div class="jacket">
+						        	<a href="javascript:void(0)">Unstructured Jacket</a>
+						        	<span>$159.99</span>
+					        	</div>
+					        </div>
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+					    
+					    <!-- 如果需要导航按钮 -->
+					    <div class="swiper-button-prev"><img src="images/左右.png" alt=""></div>
+					    <div class="swiper-button-next"><img src="images/左右_1.png" alt=""></div>
+					</div>
+						    <div class="g-bg-white">
+							<h4>CHOOSE SIZE</h4>
+							<div class="sz clearfix">
+								<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
+								<div class="chima">
+									<a href="javascript:void(0)">S</a>
+									<a href="javascript:void(0)">M</a>
+									<a href="javascript:void(0)">L</a>
+								</div>
+								<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+							</div>
+							</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 clearfix">
+					<div class="swiper-container swiper-container3">
+					    <div class="swiper-wrapper clearfix">
+					        <div class="swiper-slide"><img src="images/img4(2).jpg" alt="">
+					        	<div class="jacket">
+						        	<a href="javascript:void(0)">Exclusive Coat by Milano</a>
+						        	<span>$676.00</span>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide"><img src="images/img5(1).jpg" alt="">
+					        	<div class="jacket">
+						        	<a href="javascript:void(0)">Exclusive Coat by Milano</a>
+						        	<span>$676.00</span>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide"><img src="images/img6(1).jpg" alt="">
+					        	<div class="jacket">
+						        	<a href="javascript:void(0)">Exclusive Coat by Milano</a>
+						        	<span>$676.00</span>
+					        	</div>
+					        </div>
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>	    
+					</div>
+						<div class="g-bg-white">
+							<h4>CHOOSE SIZE</h4>
+							<div class="sz clearfix">
+								<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
+								<div class="chima">
+									<a href="javascript:void(0)">S</a>
+									<a href="javascript:void(0)">M</a>
+									<a href="javascript:void(0)">L</a>
+								</div>
+								<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+							</div>
 						</div>
-						<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+				</div>
+				<div class="col-sm-6 col-lg-3 clearfix">
+					<div class="swiper-container swiper-container4">
+					    <div class="swiper-wrapper clearfix">
+					        <div class="swiper-slide"><img src="images/img7(1).jpg" alt="">
+					        	<div class="jacket">
+						        	<a href="javascript:void(0)">T-Shirt by Gucci</a>
+						        	<span>$121.00</span>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide"><img src="images/img8(1).jpg" alt="">
+					        	<div class="jacket">
+						        	<a href="javascript:void(0)">T-Shirt by Gucci</a>
+						        	<span>$121.00</span>
+					        	</div>
+					        </div>
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+					    
+					   
+					</div>
+					<div class="g-bg-white">
+						<h4>CHOOSE SIZE</h4>
+						<div class="sz clearfix">
+							<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
+							<div class="chima">
+								<a href="javascript:void(0)">S</a>
+								<a href="javascript:void(0)">M</a>
+								<a href="javascript:void(0)">L</a>
+							</div>
+							<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+						</div>
 					</div>
 				</div>
-				<div class="g-bg-white">
-					<h4>CHOOSE SIZE</h4>
-					<div class="sz clearfix">
-						<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
-						<div class="chima">
-							<a href="javascript:void(0)">S</a>
-							<a href="javascript:void(0)">M</a>
-							<a href="javascript:void(0)">L</a>
-						</div>
-						<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+				<div class="col-sm-6 col-lg-3 clearfix">
+					<div class="swiper-container swiper-container5">
+					    <div class="swiper-wrapper clearfix">
+					        <div class="swiper-slide"><img src="images/img9(1).jpg" alt="">
+								<div class="jacket">
+						        	<a href="javascript:void(0)">Scarf by Alvara</a>
+						        	<span>$87.99</span>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide"><img src="images/img10.jpg" alt="">
+					        	<div class="jacket">
+						        	<a href="javascript:void(0)">Scarf by Alvara</a>
+						        	<span>$87.99</span>
+					        	</div>
+					        </div>
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+					    
+					    <!-- 如果需要导航按钮 -->
+					    <div class="swiper-button-prev"><img src="images/左右.png" alt=""></div>
+					    <div class="swiper-button-next"><img src="images/左右_1.png" alt=""></div>
 					</div>
-				</div>
-				<div class="g-bg-white">
-					<h4>CHOOSE SIZE</h4>
-					<div class="sz clearfix">
-						<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
-						<div class="chima">
-							<a href="javascript:void(0)">S</a>
-							<a href="javascript:void(0)">M</a>
-							<a href="javascript:void(0)">L</a>
+						<div class="g-bg-white">
+							<h4>CHOOSE SIZE</h4>
+							<div class="sz clearfix">
+								<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
+								<div class="chima">
+									<a href="javascript:void(0)">S</a>
+									<a href="javascript:void(0)">M</a>
+									<a href="javascript:void(0)">L</a>
+								</div>
+								<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
+							</div>
 						</div>
-						<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
-					</div>
+					
 				</div>
-				<div class="g-bg-white">
-					<h4>CHOOSE SIZE</h4>
-					<div class="sz clearfix">
-						<a href="javascript:void(0)"><img src="images/收 藏.png" alt=""></a>
-						<div class="chima">
-							<a href="javascript:void(0)">S</a>
-							<a href="javascript:void(0)">M</a>
-							<a href="javascript:void(0)">L</a>
-						</div>
-						<a href="javascript:void(0)"><i class="iconfont icon-gouwuche-copy" style="color: #999;"></i></a>
-					</div>
-				</div>
+			</div>
+		</div>
 		</div>
 		
 	</div>
@@ -768,7 +781,7 @@
 				<h2>Blog News</h2>
 				<p>Keep in touch with the latest blogs & news</p>
 			</div>
-			<ul class="pic-44">
+			<ul class="pic-44 clearfix">
 				<li>
 					<div class="color1">
 						<div class="sport">
